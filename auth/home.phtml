@@ -1,0 +1,19 @@
+<main>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.php?route=inscription">Inscription</a>
+            </li>
+            <li>
+                <a href="index.php?route=connexion">Connexion</a>
+            </li>
+        </ul>
+    </nav>
+</main>
+
+<?php
+
+if (isset($_SESSION['first_name'])) {
+ echo "<h1> Bonjour</h1>" . $_SESSION['first_name'] . $_SESSION['last_name'];
+}
+?>
